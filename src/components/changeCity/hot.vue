@@ -1,0 +1,18 @@
+<template>
+    <div class="m-hcity">
+        <dl>
+            <dt>{{title}}</dt>
+            <dd v-for="item in list" :key="item">{{item}}</dd>
+        </dl>
+    </div>
+</template>
+
+<script>
+export default {
+    props: ['title','list']
+}
+</script>
+
+<style lang="sass">
+  @import '@/assets/css/changecity/hot.scss'
+</style>
